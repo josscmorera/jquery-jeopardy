@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-color: #1e1f26;
     color: #ffffff;
 }
@@ -84,7 +84,53 @@ body {
     min-height: 4rem;
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
 }
+.logo {
+    max-width: 65%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .question-display {
+        font-size: 1.25rem;
+    }
+    .logo {
+        max-width: 55%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .question-display {
+        font-size: 1.5rem;
+    }
+    .logo {
+        max-width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .question-display {
+        font-size: 1.75rem;
+    }
+    .logo {
+        max-width: 40%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .question-display {
+        font-size: 2rem;
+    }
+    .logo {
+        max-width: 35%;
+    }
+}
+
 
 .answer {
     font-size: 1rem;
@@ -156,11 +202,7 @@ a:link {
     color: yellow;
 }
 
-.logo {
-    max-width: 50%;
-    height: auto;
-    margin-bottom: 2rem;
-}
+
 
 .confetti-container {
     z-index: 1;
